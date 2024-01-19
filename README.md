@@ -17,3 +17,4 @@
   * Only Admin can push to "main"
   * Commenting, README and CHANGELOG should always be consistantly kept up to date
 * We can look in to having each page only update when the README is updated (via GitHub Actions)
+* Be patient! It can take up to 10 mins for an update to publish
