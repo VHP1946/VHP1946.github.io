@@ -1,4 +1,3 @@
-# VHP1946.github.io
 "Homepage" for VHP technical documentation.
 
 [CHANGELOG](./CHANGELOG.md)
