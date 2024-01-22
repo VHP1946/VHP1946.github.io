@@ -1,6 +1,9 @@
 # VHP1946.github.io
 "Homepage" for VHP technical documentation.
 
+[CHANGELOG](./CHANGELOG.md)
+[RR Quoter](../VAD-RRQuoter)
+
 
 ## Process
 * Each repo to be tracked needs to have Pages enabled (requires Owner of Organization or Project)
