@@ -1,6 +1,7 @@
-"Homepage" for VHP technical documentation.
+"Homepage" for VHP technical documentation
 
-[CHANGELOG](./CHANGELOG.md)
+[VHP HOME] | [CHANGELOG] | [VHP PORTAL] | [DEV PORTAL]
+
 [RR Quoter](../VAD-RRQuoter)
 
 
@@ -33,3 +34,9 @@
 ## External Links
 * Good GitHub practices (branching)
 * Good coding practices
+
+
+[VHP HOME]: http://vhp1946.github.io
+[CHANGELOG]: ./CHANGELOG.md
+[VHP PORTAL]: https://vhpportal.com/
+[DEV PORTAL]: http://dev.vhpportal.com/
