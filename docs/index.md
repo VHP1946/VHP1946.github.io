@@ -19,7 +19,7 @@ VHP's Technical Documentation
 
 
 [VHP HOME]: http://vhp1946.github.io
-[CHANGELOG]: ./CHANGELOG.md
-[README]: ./README.md
+[CHANGELOG]: CHANGELOG.md
+[README]: README.md
 [VHP PORTAL]: https://vhpportal.com/
 [DEV PORTAL]: http://dev.vhpportal.com/
