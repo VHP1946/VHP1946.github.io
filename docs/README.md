@@ -1,10 +1,3 @@
-"Homepage" for VHP technical documentation
-
-[VHP HOME] | [CHANGELOG] | [VHP PORTAL] | [DEV PORTAL]
-
-[RR Quoter](../VAD-RRQuoter)
-
-
 ## Process
 * Each repo to be tracked needs to have Pages enabled (requires Owner of Organization or Project)
 * Each repo will monitor a certain branch and only update its page when that branch is updated (most likely "main")
@@ -34,9 +27,3 @@
 ## External Links
 * Good GitHub practices (branching)
 * Good coding practices
-
-
-[VHP HOME]: http://vhp1946.github.io
-[CHANGELOG]: ./CHANGELOG.md
-[VHP PORTAL]: https://vhpportal.com/
-[DEV PORTAL]: http://dev.vhpportal.com/
