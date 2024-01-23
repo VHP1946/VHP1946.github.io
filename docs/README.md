@@ -1,4 +1,3 @@
-
 Infobase README
 
 ## Process
@@ -21,6 +20,8 @@ Infobase README
 * THIS IS A PUBLIC WEBSITE! Access can be restricted in various ways. 
     * Whatever strategy we decide on this, I can probably make it happen
 * Could be used as a user guide, but Jira Portal is still probably better for that
+* Jekyll (the Renderer) sets "home" to either index.md/html or README.md/html
+    * It will only take ONE of these, the second one is not rendered at all
 
 
 ## Internal Links
