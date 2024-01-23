@@ -1,9 +1,16 @@
-VHP's Technical Documentation
------------------------------
-
 [VHP HOME] | [CHANGELOG] | [README] | [VHP PORTAL] | [DEV PORTAL]
 
+## Resources
+### VHP Standards
+[Code Commenting](./bin/Code Commenting.js)
+### Jira
+### Git / GitHub
+[VHP Repo Library](https://github.com/orgs/VHP1946/repositories)
+[Adding SSH Key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
 
+
+
+## Repository Documentation
 ### Components / Packages / Libraries
 - [VHP Client API](./vhp-api)
 - [Mongo API](./vhp-mongoapi)
