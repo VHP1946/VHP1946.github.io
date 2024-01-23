@@ -1,4 +1,5 @@
-## VHP's Technical Documentation
+VHP's Technical Documentation
+-----------------------------
 
 [VHP HOME] | [CHANGELOG] | [README] | [VHP PORTAL] | [DEV PORTAL]
 
@@ -18,7 +19,7 @@
 
 
 [VHP HOME]: http://vhp1946.github.io
-[CHANGELOG]: CHANGELOG
-[README]: README
+[CHANGELOG]: CHANGELOG.md
+[README]: README.md
 [VHP PORTAL]: https://vhpportal.com/
 [DEV PORTAL]: http://dev.vhpportal.com/
