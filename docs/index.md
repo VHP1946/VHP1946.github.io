@@ -1,5 +1,4 @@
-VHP's Technical Documentation
------------------------------
+## VHP's Technical Documentation
 
 [VHP HOME] | [CHANGELOG] | [README] | [VHP PORTAL] | [DEV PORTAL]
 
