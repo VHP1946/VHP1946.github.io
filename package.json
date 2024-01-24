@@ -1,8 +1,0 @@
-{
-    "name": "InfoBase",
-    "description": "Technical Documentation for VHP",
-    "version": "0.0.1",
-    "scripts": {
-        "app": "index.html"
-    }
-}
