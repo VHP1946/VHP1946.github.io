@@ -1,4 +1,4 @@
-[VHP HOME] | [CHANGELOG] | [README] | [VHP PORTAL] | [DEV PORTAL]
+[HOME] | [CHANGELOG] | [README] | [VHP PORTAL] | [DEV PORTAL]
 
 ## Resources
 
@@ -52,7 +52,7 @@
 
 
 
-[VHP HOME]: http://vhp1946.github.io
+[HOME]: http://vhp1946.github.io
 [CHANGELOG]: ./docs/CHANGELOG.md
 [README]: ./docs/README.md
 [VHP PORTAL]: https://vhpportal.com/
