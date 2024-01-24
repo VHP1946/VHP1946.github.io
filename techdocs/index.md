@@ -1,6 +1,6 @@
 [HOME] | [CHANGELOG] | [README] | [VHP PORTAL] | [DEV PORTAL]
 
-[Bulletins] | [Resources] | [Repo Docs](#Repository-Documentation) | [User Documentation]
+[Bulletins] | [Resources] | [Repo Docs](#repository-documentation) | [User Documentation]
 
 
 ### Team Standards
@@ -45,9 +45,9 @@
 
 
 
-[HOME]: http://vhp1946.github.io
-[Tech Home]: http://vhp1946.github.io/t
-[User Documentation]: http://vhp1946.github.io/u
+[HOME]: ./
+[Tech Home]: ./techdocs
+[User Documentation]: ./userdocs
 [CHANGELOG]: ./docs/CHANGELOG.md
 [README]: ./docs/README.md
 [VHP PORTAL]: https://vhpportal.com/

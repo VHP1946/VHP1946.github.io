@@ -1,4 +1,4 @@
-[HOME] | [Tech Home]
+[HOME] | [Tech Home] | [User Documentation]
 
 
 ### Team Standards
@@ -9,9 +9,9 @@
 
 
 
-[HOME]: http://vhp1946.github.io/u
-[Tech Home]: http://vhp1946.github.io/t
-[User Home]: http://vhp1946.github.io/u
+[HOME]: ./
+[Tech Home]: ./techdocs
+[User Documentation]: ./userdocs
 [CHANGELOG]: ./docs/CHANGELOG.md
 [README]: ./docs/README.md
 [VHP PORTAL]: https://vhpportal.com/
