@@ -1,6 +1,6 @@
 [HOME] | [CHANGELOG] | [README] | [VHP PORTAL] | [DEV PORTAL]
 
-[Bulletins] | [Resources] | [Repo Docs](#repository-documentation) | [User Documentation]
+[Bulletins] | [Resources] | [Repo Docs](#repository-documentation) | [User Docs]
 
 
 ### Team Standards
@@ -46,8 +46,8 @@
 
 
 [HOME]: ./
-[Tech Home]: ./techdocs
-[User Documentation]: ./userdocs
+[Technical Docs]: ../techdocs
+[User Docs]: ../userdocs
 [CHANGELOG]: ./docs/CHANGELOG.md
 [README]: ./docs/README.md
 [VHP PORTAL]: https://vhpportal.com/

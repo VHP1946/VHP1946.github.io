@@ -1,5 +1,4 @@
-[HOME] | [Tech Home] | [User Documentation]
-
+[HOME] | [Technical Docs]
 
 ### Team Standards
 - [Naming Standards]()
@@ -10,8 +9,8 @@
 
 
 [HOME]: ./
-[Tech Home]: ./techdocs
-[User Documentation]: ./userdocs
+[Technical Docs]: ../techdocs
+[User Docs]: ../userdocs
 [CHANGELOG]: ./docs/CHANGELOG.md
 [README]: ./docs/README.md
 [VHP PORTAL]: https://vhpportal.com/
