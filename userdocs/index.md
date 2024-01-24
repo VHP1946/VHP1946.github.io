@@ -2,9 +2,10 @@
 
 # User Documentation
 
-### Team Standards
-- [Naming Standards]()
-- [Code Commenting](./bin/Code Commenting.js)
+### IM Team Interaction Standards
+- Support Requests
+- Project Requests
+
 
 ---
 
