@@ -47,9 +47,9 @@
 
 
 
-[Home]: ./../techdocs
-[Technical Docs]: ./techdocs
-[User Docs]: ./userdocs
+[Home]: ../techdocs
+[Technical Docs]: ../techdocs
+[User Docs]: ../userdocs
 [CHANGELOG]: ./docs/CHANGELOG.md
 [README]: ./docs/README.md
 [VHP Portal]: https://vhpportal.com/
