@@ -1,6 +1,6 @@
-[Home] | [Technical Docs]
-
 # User Documentation
+
+[Home] | [Technical Docs] | [VHP Portal]
 
 ### IM Team Interaction Standards
 - Support Requests
@@ -11,9 +11,9 @@
 
 
 
-[Home]: ./
-[Technical Docs]: ../techdocs
-[User Docs]: ../userdocs
+[Home]: ./../userdocs
+[Technical Docs]: ./techdocs
+[User Docs]: ./userdocs
 [CHANGELOG]: ./docs/CHANGELOG.md
 [README]: ./docs/README.md
 [VHP Portal]: https://vhpportal.com/

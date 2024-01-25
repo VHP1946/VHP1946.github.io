@@ -1,8 +1,8 @@
-[Home] | [CHANGELOG] | [README] | [VHP Portal] | [DEV Portal]
-
 # Technical Documentation
 
-[Bulletins] | [Resources] | [Repo Docs](#repository-documentation) | [User Docs]
+[Home] | [CHANGELOG] | [User Docs] | [VHP Portal] | [DEV Portal]
+
+[Bulletins](./pages/bulletins.md) | [Resources](./pages/resources.md) | [Repo Docs](#repository-documentation)
 
 
 ### Team Standards
@@ -47,10 +47,9 @@
 
 
 
-
-[Home]: ./
-[Technical Docs]: ../techdocs
-[User Docs]: ../userdocs
+[Home]: ./../techdocs
+[Technical Docs]: ./techdocs
+[User Docs]: ./userdocs
 [CHANGELOG]: ./docs/CHANGELOG.md
 [README]: ./docs/README.md
 [VHP Portal]: https://vhpportal.com/
