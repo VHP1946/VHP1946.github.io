@@ -7,6 +7,22 @@
 - Project Requests
 
 
+### JONAS Guides
+- Logging In
+- Setting Up
+- Stuff
+- Things
+
+
+### VHP Application Guides
+- [Work Board]
+- [Reporting Tool]
+- [Estimator (RRQ)](../VAD-RRQuoter/userdocs "Residential Estimator")
+- [Estimator (BEEQ)](../VAD-BEEQuoter/userdocs "Residential Estimator")
+- [Sales Tracker]
+
+
+
 ---
 
 
