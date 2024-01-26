@@ -1,14 +1,12 @@
 # IM Team Resources
 
-| [Home] |
-
 ### VHP IM Team SoPs  
 (single doc, these will link to sections)
-- [Logging Time]
+- [Logging Time](./sops#logging-time)
 - [Code Commenting](../resources/Code Commenting.js)
-- [README Structure]
-- [CHANGELOG Structure]
-- [Git Repo Naming]
+- [README Structure](./sops#readme-structure)
+- [CHANGELOG Structure](./sops#changelog-structure)
+- [Git Repo Naming](./sops#git-repo-naming)
 
 ### VHP IM Environment
 - [Object Models / Schema] - covers the data structure for all objects stored in our databases
@@ -26,6 +24,3 @@
 - [Git Commands] - quick guide for commonly used Git commands
 - [Adding a SSH Key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
 
-
-
-[Home]: ../
