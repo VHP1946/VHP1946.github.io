@@ -14,7 +14,7 @@
 ## README Structure
 <details>
     <summary>View Code</summary>
-    ```markdown
+    <code>
         ### version #.#.##
         Released: date | tbd
 
@@ -29,11 +29,12 @@
         Fixes:
             - Fixed this
             - Fixed that
-    ```
+    </code>
 </details>
 
 ## CHANGELOG Structure
 <a href="../resources/changelog-example.md" download="CHANGELOG.md">Download an Example</a>
+
 [View the Rendered Results](../resources/changelog-example)
 
 ## Git Repo Naming
