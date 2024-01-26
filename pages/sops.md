@@ -12,29 +12,11 @@
 
 
 ## README Structure
-<details>
-    <summary>View Code</summary>
-    <code>
-        ### version #.#.##
-        Released: date | tbd
-
-        Issues:
-            - VWP-##
-            - IM-##
-
-        Updates:
-            - Updated this
-            - Updated that
-
-        Fixes:
-            - Fixed this
-            - Fixed that
-    </code>
-</details>
+[View Code](../resources/readme-example.md) |
+<a href="../resources/readme-example.md" download="README.md">Download an Example</a> |
+[View the Rendered Results](../resources/readme-example)
 
 ## CHANGELOG Structure
-<a href="../resources/changelog-example.md" download="CHANGELOG.md">Download an Example</a>
-
-[View the Rendered Results](../resources/changelog-example)
+[View Code](../resources/changelog-example.md) | <a href="../resources/changelog-example.md" download="CHANGELOG.md">Download an Example</a> | [View the Rendered Results](../resources/changelog-example)
 
 ## Git Repo Naming
