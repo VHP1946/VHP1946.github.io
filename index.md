@@ -1,5 +1,3 @@
-# Technical Documentation
-
 [Home] | [CHANGELOG] | [VHP Portal] | [DEV Portal]
 
 [Bulletins](./pages/bulletins.md) | [Resources](./pages/resources.md) | [Repo Docs](#repository-documentation)
