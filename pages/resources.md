@@ -1,6 +1,21 @@
 # IM Team Resources
 
-[Home]
+| [Home] |
+
+> [!NOTE]
+> Useful information that users should know, even when skimming content.
+
+> [!TIP]
+> Helpful advice for doing things better or more easily.
+
+> [!IMPORTANT]
+> Key information users need to know to achieve their goal.
+
+> [!WARNING]
+> Urgent info that needs immediate user attention to avoid problems.
+
+> [!CAUTION]
+> Advises about risks or negative outcomes of certain actions.
 
 ### VHP IM Team SoPs  
 (single doc, these will link to sections)
@@ -24,7 +39,7 @@
 ### Git / GitHub
 - [VHP Repo Library](https://github.com/orgs/VHP1946/repositories) - direct link to VHP's Git repositories
 - [Git Commands] - quick guide for commonly used Git commands
-- [Adding SSH Key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
+- [Adding a SSH Key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
 
 
 
