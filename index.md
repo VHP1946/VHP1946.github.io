@@ -1,9 +1,7 @@
-[Home] | [CHANGELOG](./docs/CHANGELOG.md) | [Repo Link](https://github.com/VHP1946/VHP1946.github.io)
+[Home] | [CHANGELOG](./docs/CHANGELOG.md) | [Repo Link](github.com/VHP1946/VHP1946.github.io) | [Jira Link](vhp.atlassian.net)
 
-| [Repo Docs](#repository-documentation) | [Resources](./pages/resources.md) | 
-| [Schemes](./vs-mongo-mart) | [Lists](./pages/settings-lists.md) |
-
-[Back test](../../)
+[Repo Docs](#repository-documentation) | [Resources](./pages/resources.md) | [Your Jira Dash](vhp.atlassian.net/jira/dashboards/10000)
+[Schemes](./vs-mongo-mart) | [Lists](./pages/settings-lists.md)
 
 ### Team Standards
 - Naming Standards
@@ -50,11 +48,3 @@
 - [BEE Quoter](./VAD-BEEQuoter "VAD-BEEQuoter")
 - [RR Quoter](./VAD-Quoter "VAD-Quoter")
 - [RR Work Board (electron portal)](./VAD-RRBoard-electron "VAD-RRBoard-electron")
-
-
-
-[Home]: ./
-[CHANGELOG]: ./docs/CHANGELOG.md
-[README]: ./docs/README.md
-[VHP Portal]: https://vhpportal.com/
-[DEV Portal]: http://dev.vhpportal.com/
