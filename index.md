@@ -1,7 +1,9 @@
-[Home] | [CHANGELOG] | [VHP Portal] | [DEV Portal]
+[Home] | [CHANGELOG](./docs/CHANGELOG.md) | [Repo Link](https://github.com/VHP1946/VHP1946.github.io)
 
-[Bulletins](./pages/bulletins.md) | [Resources](./pages/resources.md) | [Repo Docs](#repository-documentation)
+| [Repo Docs](#repository-documentation) | [Resources](./pages/resources.md) | 
+| [Schemes](./vs-mongo-mart) | [Lists](./pages/settings-lists.md) |
 
+[Back test](../)
 
 ### Team Standards
 - Naming Standards
