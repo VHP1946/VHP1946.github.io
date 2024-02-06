@@ -4,19 +4,128 @@
   * [Stages](#stages)
   * [Statuses](#statuses)
 * [Marketing](#marketing)
- * [Lead Generator](#lead-generator)
- * [Contact Source](#contact-source)
- * [Presented Via](#presented-via)
+  * [Lead Generator](#lead-generator)
+  * [Contact Source](#contact-source)
+  * [Presented Via](#presented-via)
 * [Residential Replacement](#residential-replacement)
- * [Categories and Types](#categories-and-types)
- * [Consultants](#consultants)
-* [Municipalities](#municipalities)
+  * [Categories and Types](#categories-and-types)
+  * [Consultants](#consultants)
+* [Company-Wide](#company-wide)  
+  * [Municipalities](#municipalities)
+  * [Utility Companies](#utility-companies)
 
 ## Workflow
 
 ### Stages
+```json
+{
+    "stage": {
+        "call": {
+            "name": "Call / Request",
+            "desc": "Client contacted company (Vogel / BEE / BCE)",
+            "statuses": [
+                "active"
+            ]
+        },
+        "lead": {
+            "name": "Lead",
+            "desc": "Client requested service / consult",
+            "statuses": [
+                "active"
+            ]
+        },
+        "appoint": {
+            "name": "Appointment",
+            "desc": "Client has an appointment for service / consult",
+            "statuses": [
+                "active",
+                "cancelled"
+            ]
+        },
+        "quote": {
+            "name": "Quote",
+            "desc": "Client has been given / will be given a quote / estimate",
+            "statuses": [
+                "active",
+                "hold",
+                "submitted",
+                "cancelled",
+                "lost"
+            ]
+        },
+        "job": {
+            "name": "Job",
+            "desc": "Work will be performed / Quote Sold",
+            "statuses": [
+                "submitted",
+                "scheduled",
+                "inprogress",
+                "reviewed",
+                "closed",
+                "cancelled"
+            ]
+        },
+        "archive": {
+            "name": "Archived",
+            "desc": "Project info is archived",
+            "statuses": {
+                "archived": {
+                    "name": "Archived",
+                    "desc": "Project info is archived"
+                }
+            }
+        }
+    }
+}
+```
 
 ### Statuses
+```json
+{
+    "status": {
+        "active": {
+            "name": "Active",
+            "desc": "Project is Active"
+        },
+        "hold": {
+            "name": "On Hold",
+            "desc": "Project is On Hold / waiting for something"
+        },
+        "submitted": {
+            "name": "Submitted",
+            "desc": "Project has been submitted to office"
+        },
+        "scheduled": {
+            "name": "Scheduled",
+            "desc": "Project has been given a start date"
+        },
+        "inprogress": {
+            "name": "In-Progress",
+            "desc": "Project is currently being worked on (physically)"
+        },
+        "reviewed": {
+            "name": "Work Complete / Reviewed",
+            "desc": "Physical work has been completed and checked"
+        },
+        "closed": {
+            "name": "Project Complete / Closed",
+            "desc": "Project has been reviewed and all administrative work is complete"
+        },
+        "archived": {
+            "name": "Archived",
+            "desc": "Project info has been moved to the archives"
+        },
+        "cancelled": {
+            "name": "Cancelled",
+            "desc": "Project was cancelled (Appointment, Quote, Job)"
+        },
+        "lost": {
+            "name": "Lost",
+            "desc": "Client confirmed another route was taken"
+        }
+    }
+}
+```
 
 ## Marketing
 
@@ -1013,7 +1122,9 @@
 }
 ```
 
-## Municipalities
+## Company-Wide
+
+### Municipalities
 ```json
 [{
     "value": "stlco",
