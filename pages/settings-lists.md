@@ -1,16 +1,16 @@
 # Settings Lists
 
-- [Workflow](#workflow)
- - [Stages](#stages)
- - [Statuses](#statuses)
-- [Marketing](#marketing)
- - [Lead Generator](#lead-generator)
- - [Contact Source](#contact-source)
- - [Presented Via](#presented-via)
-- [Residential Replacement](#residential-replacement)
- - [Categories and Types](#categories-and-types)
- - [Consultants](#consultants)
-- [Municipalities](#municipalities)
+* [Workflow](#workflow)
+  * [Stages](#stages)
+  * [Statuses](#statuses)
+* [Marketing](#marketing)
+ * [Lead Generator](#lead-generator)
+ * [Contact Source](#contact-source)
+ * [Presented Via](#presented-via)
+* [Residential Replacement](#residential-replacement)
+ * [Categories and Types](#categories-and-types)
+ * [Consultants](#consultants)
+* [Municipalities](#municipalities)
 
 ## Workflow
 
