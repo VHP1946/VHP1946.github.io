@@ -1,4 +1,4 @@
-[Tech Docs Home] | [CHANGELOG](./docs/CHANGELOG.md) | [Repo Link](github.com/VHP1946/VHP1946.github.io) | [Jira Link](vhp.atlassian.net)
+[Tech Docs Home](vhp1946.github.io) | [Back](../) | [Repo Link](github.com/VHP1946/VHP1946.github.io) | [Jira Link](vhp.atlassian.net)
 
 # How-To
 A quick greatest-hits list of how-tos
