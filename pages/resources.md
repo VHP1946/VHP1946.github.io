@@ -1,4 +1,4 @@
-[Tech Docs Home](vhp1946.github.io) | [Back](../) | [Repo Link](github.com/VHP1946/VHP1946.github.io) | [Jira Link](vhp.atlassian.net)
+[Tech Docs Home](https://vhp1946.github.io) | [Back](../) | [Repo Link](https://github.com/VHP1946/VHP1946.github.io) | [Jira Link](https://vhp.atlassian.net)
 
 # IM Team Resources
 
