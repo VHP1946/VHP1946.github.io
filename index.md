@@ -1,7 +1,7 @@
-[Home] | [CHANGELOG](./docs/CHANGELOG.md) | [Repo Link](github.com/VHP1946/VHP1946.github.io) | [Jira Link](vhp.atlassian.net)
+[Tech Docs Home] | [CHANGELOG](./docs/CHANGELOG.md) | [Repo Link](github.com/VHP1946/VHP1946.github.io) | [Jira Link](vhp.atlassian.net)
 
 [Repo Docs](#repository-documentation) | [Resources](./pages/resources.md) | [Your Jira Dash](vhp.atlassian.net/jira/dashboards/10000)
-[Schemes](./vs-mongo-mart) | [Lists](./pages/settings-lists.md)
+[Schemes](./vs-mongo-mart) | [Lists](./pages/settings-lists.md) | [How-To's](./pages/how-to.md)
 
 ### Team Standards
 - Naming Standards

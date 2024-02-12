@@ -1,12 +1,12 @@
 
 #### version 0.0.4
-##### Released: 1/24/23
-##### Issues Addressed:
+#### - Released: 1/24/23
+#### - Issues Addressed:
     - VWAP-##
     - VWAP-##
-##### Feature Updates:
+#### - Feature Updates:
     - Upgraded layout
-##### Fixes:
+#### - Fixes:
     - Fixed bad links
 
 
