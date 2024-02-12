@@ -1,4 +1,4 @@
-[Home](../../) | [CHANGELOG](CHANGELOG.md) | [VHP Portal](https://vhpportal.com) | [DEV Portal](https://dev.vhpportal.com)
+[Tech Docs Home](https://vhp1946.github.io) | [CHANGELOG](CHANGELOG.md) | [Repo Link](https://github.com/VHP1946/) | [Jira Link](https://vhp.atlassian.net)
 
 - [Topic One](#topic-one)
   - [Sub-Topic One, Part One](#sub-topic-one-part-one)
