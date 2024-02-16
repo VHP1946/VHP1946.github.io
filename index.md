@@ -44,7 +44,7 @@
 - [Task Manager](./VA-TaskManager "VA-TaskManager")
 
 ### Desktop Applications 
-- [Electron Portal](./VAD-Electron-Portal "VAD-Electron-Portal")
-- [BEE Quoter](./VAD-BEEQuoter "VAD-BEEQuoter")
-- [RR Quoter](./VAD-Quoter "VAD-Quoter")
-- [RR Work Board (electron portal)](./VAD-RRBoard-electron "VAD-RRBoard-electron")
+- [Electron Portal](./VD-Electron-Portal "VD-Electron-Portal")
+- [BEE Quoter](./VD-BEEQuoter "VD-BEEQuoter")
+- [RR Quoter](./VD-Quoter "VD-Quoter")
+- [RR Office (electron portal)](./VD-RROffice "VD-RROffice")
