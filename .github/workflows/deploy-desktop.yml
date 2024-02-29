@@ -1,7 +1,6 @@
 name: Build & Release Desktop App to GH
 
-on:
-  workflow_dispatch:
+on: workflow_call
 
 permissions:
   contents: write
