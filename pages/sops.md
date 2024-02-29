@@ -3,26 +3,34 @@
 # IM Team Standards
 
 - [Logging Time](#logging-time)
-- [Code Commenting](../resources/Code Commenting.js)
-- [README Structure](#readme-structure)
-- [CHANGELOG Structure](#changelog-structure)
-- [Git Repo Naming](#git-repo-naming)
+- [Documentation](#documentation)
+  - [Code Commenting](../resources/Code Commenting.js)
+  - [*Docs* Folder](#docs-folder)
+  - [README Structure](#readme-structure)
+  - [CHANGELOG Structure](#changelog-structure)
+- [Configuration](#configuration)
+  - [Component Config](#component-config)
+  - [Application Config](#application-config)
+  - [Electron Config (Forge)](#electron-config-forge)
 
-
+---
 
 ## Logging Time
 
+## Documentation
 
-## README Structure
+### *docs* folder
+
+### README Structure
 [View Code](../resources/readme-example.md) |
 <a href="../resources/readme-example.md" download="README.md">Download an Example</a> |
 [View the Rendered Results](../resources/readme-example)
 
-## CHANGELOG Structure
+### CHANGELOG Structure
 [View Code](../resources/changelog-example.md) | <a href="../resources/changelog-example.md" download="CHANGELOG.md">Download an Example</a> | [View the Rendered Results](../resources/changelog-example)
 
 
-## Configurations
+## Configuration
 
 ### Component Config
 Component configuration should be in a *package.json* file

@@ -4,8 +4,11 @@
 [Schemes](./vs-mongo-mart) | [Lists](./pages/settings-lists.md) | [How-To's](./pages/how-to.md)
 
 ### Team Standards
-- Naming Standards
+- [Logging Time](#logging-time)
 - [Code Commenting](./resources/Code Commenting.js)
+- [README Structure](#readme-structure)
+- [CHANGELOG Structure](#changelog-structure)
+- [Configurations](#configurations)
 
 ---
 
