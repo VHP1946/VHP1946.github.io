@@ -5,6 +5,10 @@ on: workflow_call
 permissions:
   contents: write
   
+concurrency:
+  group: "deployment"
+  cancel-in-progress: true
+  
 jobs:
   build:
     strategy:
