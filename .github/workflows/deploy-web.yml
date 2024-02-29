@@ -1,0 +1,17 @@
+name: Build & Release Web App
+
+on: workflow_call
+
+permissions:
+  contents: write
+  
+concurrency:
+  group: "deployment"
+  cancel-in-progress: true
+  
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 'Build'
+        run: echo 'Hello'
