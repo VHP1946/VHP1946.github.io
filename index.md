@@ -12,23 +12,23 @@
 ## Repository Documentation
 
 ### Components / Packages / Libraries
-- [VHP Core - Client](./vhp-vapi-client "vhp-vapi-client")
-- [VHP Core - Server](./vhp-core-server "vhp-core-server")
-- [Mongo API](./vhp-mongomart-server "vhp-mongomart-server")
-- [VHP Web Server](./vhp-webserver "vhp-webserver")
-- [React Component Library](./vhp-react-library "vhp-react-library")
-- [VHP Static Repository](./vhp-static-repository "vhp-static-repository")
-- [VHP React Forms](./vhp-ReactForms "vhp-ReactForms")
-- [Electron App Base](./vhp-electron-app "vhp-electron-app")
-- [Electron Repository](./vhp-electron-repo "vhp-electron-repo")
+- [VHP Core - Client](./vhp-vapi-client "vhp-vapi-client") "vhp-vapi-client"
+- [VHP Core - Server](./vhp-core-server "vhp-core-server") "vhp-core-server"
+- [Mongo API](./vhp-mongomart-server "vhp-mongomart-server") "vhp-mongomart-server"
+- [VHP Web Server](./vhp-webserver "vhp-webserver") "vhp-webserver"
+- [React Component Library](./vhp-react-library "vhp-react-library") "vhp-react-library"
+- [VHP Static Repository](./vhp-static-repository "vhp-static-repository") "vhp-static-repository"
+- [VHP React Forms](./vhp-ReactForms "vhp-ReactForms") "vhp-ReactForms"
+- [Electron App Base](./vhp-electron-app "vhp-electron-app") "vhp-electron-app"
+- [Electron Repository](./vhp-electron-repo "vhp-electron-repo") "vhp-electron-repo"
 
 ### Servers / Backend
-- [VHP API (VAPI)](./vs-vapi "vs-vapi")
-- [VHP Business Intellegnce (VBI)](./vs-vbi "vs-vbi")
-- [Mongo Mart](./vs-mongo-mart "vs-mongo-mart")
-- [JONAS API (JAPI)](./vs-jonas-api "vs-jonas-api")
-- [Mail Server](./vs-mail-server "vs-mail-server")
-- [WebApps](./vs-webapps "vs-webapps")
+- [VHP API (VAPI)](./vs-vapi "vs-vapi") "vs-vapi"
+- [VHP Business Intellegnce (VBI)](./vs-vbi "vs-vbi") "vs-vbi"
+- [Mongo Mart](./vs-mongo-mart "vs-mongo-mart") "vs-mongo-mart"
+- [JONAS API (JAPI)](./vs-jonas-api "vs-jonas-api") "vs-jonas-api"
+- [Mail Server](./vs-mail-server "vs-mail-server") "vs-mail-server"
+- [WebApps](./vs-webapps "vs-webapps") "vs-webapps"
 
 ### Network Packages
 - [Network Services](./vn-network-services "vn-network-services")

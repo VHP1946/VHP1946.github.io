@@ -1,13 +1,12 @@
-[Tech Docs Home](https://vhp1946.github.io) | [Back](../) | [Repo Link](https://github.com/VHP1946/VHP1946.github.io) | [Jira Link](https://vhp.atlassian.net)
+[Tech Docs Home](https://vhp1946.github.io) | [Go Back](../) | [Repo Link](https://github.com/VHP1946/VHP1946.github.io) | [Jira Link](https://vhp.atlassian.net)
 
 # IM Team Resources
 
-## VHP IM Team SoPs  
+## VHP IM Team Standards  
 - [Logging Time](./sops#logging-time)
 - [Code Commenting](../resources/Code Commenting.js)
 - [README Structure](./sops#readme-structure)
 - [CHANGELOG Structure](./sops#changelog-structure)
-- [Git Repo Naming](./sops#git-repo-naming)
 
 ## VHP IM Environment
 - [Object Models / Schema] - covers the data structure for all objects stored in our databases

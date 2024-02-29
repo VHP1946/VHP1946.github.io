@@ -1,3 +1,0 @@
-# IM Team Bulletins
-
-## Notice!

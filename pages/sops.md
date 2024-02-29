@@ -1,4 +1,4 @@
-[Tech Docs Home](https://vhp1946.github.io) | [Back](../) | [Repo Link](https://github.com/VHP1946/VHP1946.github.io) | [Jira Link](https://vhp.atlassian.net)
+[Tech Docs Home](../) | [Go Back](../) | [Repo Link](https://github.com/VHP1946/VHP1946.github.io) | [Jira Link](https://vhp.atlassian.net)
 
 # IM Team Standards
 
@@ -15,7 +15,6 @@
 
 ---
 
-
 ## Documentation
 
 ### Logging Time
@@ -28,7 +27,9 @@
 [View the Rendered Results](../resources/readme-example)
 
 ### CHANGELOG Structure
-[View Code](../resources/changelog-example.md) | <a href="../resources/changelog-example.md" download="CHANGELOG.md">Download an Example</a> | [View the Rendered Results](../resources/changelog-example)
+[View Code](../resources/changelog-example.md) |
+<a href="../resources/changelog-example.md" download="CHANGELOG.md">Download an Example</a> |
+[View the Rendered Results](../resources/changelog-example)
 
 
 ## Configuration
@@ -36,12 +37,13 @@
 ### Component Config
 Component configuration should be in a *package.json* file
 - name -> The abbreviated name of the product / the “Programmatic Name”
-    - Update File : {**name**}-{version}-full.nupkg
-    - Git Repo name
-    - "VD-" denotes a desktop application
-    - "VA-" denotes a web-based application
-    - "vhp-" denotes a packaged module
-    - "vs-" denotes a 
+  - Mirrors the GitHub Repo name
+  - "VD-" denotes a desktop application
+  - "VA-" denotes a web-based application
+  - "vhp-" denotes a packaged module
+  - "vs-" denotes a server setup
+  - "vn-" denotes a network setup
+  - Update File : {**name**}-{version}-full.nupkg
 - version -> The version number (set by developer via [Semantic Versioning]())
   - Update File : {name}-{**version**}-full.nupkg
   - Installer Executable : {productName}-{**version**} Setup.exe
@@ -75,9 +77,16 @@ Example:
 
 ### Electron Config (Forge)
 *forge.config.js*
+
 Example:
 ```js
-
-module.exports = {}
-
+module.exports = {
+    packagerConfig: {
+    icon: './bin/assets/V-Mark-red.ico',
+    executableName: 'Res-Office',
+    asar: true,
+    overwrite: true
+  },
+  // ... 
+}
 ```
