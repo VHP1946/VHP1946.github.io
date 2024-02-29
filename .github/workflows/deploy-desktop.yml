@@ -1,0 +1,38 @@
+name: Build & Release Desktop App to GH
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  
+jobs:
+  build:
+    strategy:
+      matrix:
+        os:
+          [
+            { name: 'linux', image: 'ubuntu-latest' },
+            { name: 'windows', image: 'windows-latest' },
+            { name: 'macos', image: 'macos-latest' }
+          ]
+    runs-on: ${{ matrix.os.image }}
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - run: npm ci
+
+      - run: npm run make
+      
+      - name: Release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: out/make/**/*.*
+          body_path: 'docs/CHANGELOG.md'
+          tag_name: v1.1.0
