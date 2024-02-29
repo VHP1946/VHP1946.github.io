@@ -2,10 +2,10 @@
 
 # IM Team Standards
 
-- [Logging Time](#logging-time)
 - [Documentation](#documentation)
+  - [Logging Time](#logging-time)
   - [Code Commenting](../resources/Code Commenting.js)
-  - [*Docs* Folder](#docs-folder)
+  - [*docs* Folder](#docs-folder)
   - [README Structure](#readme-structure)
   - [CHANGELOG Structure](#changelog-structure)
 - [Configuration](#configuration)
@@ -15,9 +15,10 @@
 
 ---
 
-## Logging Time
 
 ## Documentation
+
+### Logging Time
 
 ### *docs* folder
 
@@ -35,28 +36,28 @@
 ### Component Config
 Component configuration should be in a *package.json* file
 - name -> The abbreviated name of the product / the “Programmatic Name”
-    - Update File : {<name>}-{version}-full.nupkg
+    - Update File : {**name**}-{version}-full.nupkg
     - Git Repo name
     - "VD-" denotes a desktop application
     - "VA-" denotes a web-based application
     - "vhp-" denotes a packaged module
     - "vs-" denotes a 
 - version -> The version number (set by developer via [Semantic Versioning]())
-  - Update File : {name}-{<version>}-full.nupkg
-  - Installer Executable : {productName}-{<version>} Setup.exe
+  - Update File : {name}-{**version**}-full.nupkg
+  - Installer Executable : {productName}-{**version**} Setup.exe
 - productName -> The long-form product name / the “Display Name”
-  - Installer Executable : {<productName>}-{version} Setup.exe
+  - Installer Executable : {**productName**}-{version} Setup.exe
 - description -> A short description of the product
 - author -> The primary developer on the product
 
 Example:
 ```json
 {
-    "name": "VD-Office",  // abbreviated product name; the “Programmatic Name”
-    "version": "1.1.0",  // version number (set by developer via Semantic Versioning)
-    "productName": "VHP Office Desktop",  // long-form product name; the “Display Name”
-    "description": "Electron Portal for Office Use",  // short description of the product
-    "author": "VHP-IM",  // primary developer on the product
+    "name": "VD-Office",
+    "version": "1.1.0",
+    "productName": "VHP Office Desktop",
+    "description": "Electron Portal for Office Use",
+    "author": "VHP-IM"
 }
 ```
 
@@ -67,7 +68,8 @@ Application configuration should be in a folder named "app" at the root of the p
 Example:
 ```json
 {
-
+  "appname": "VD-Office",
+  "dev": false
 }
 ```
 

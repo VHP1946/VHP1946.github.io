@@ -4,7 +4,6 @@
 [Schemes](./vs-mongo-mart) | [Lists](./pages/settings-lists.md) | [How-To's](./pages/how-to.md)
 
 ### [Team Standards](./pages/sops.md)
-- [Logging Time](./pages/sops.md#logging-time)
 - [Documentation](./pages/sops.md#documentation)
 - [Configuration](./pages/sops.md#configuration)
 
