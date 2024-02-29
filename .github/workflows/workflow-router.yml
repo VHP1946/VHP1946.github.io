@@ -28,7 +28,7 @@ jobs:
 
   deploy-desktop:
     name: 'Build and Deploy for Desktop'
-    if: ${{ github.ref_type == 'branch' && github.ref_name == 'main' }}
+    if: ${{ github.ref_type == 'branch' && github.ref_name == 'main' && contains(github.repository, '/VD-') }}
     needs: get-info
     uses: ./.github/workflows/deploy-desktop.yml
 
@@ -42,5 +42,5 @@ jobs:
     name: 'Update Docs on GH Pages'
     if: ${{ github.ref_type == 'branch' && github.ref_name == 'dev' }}
     needs: get-info
-    uses: './.github/workflows/release-docs.yml'
+    uses: ./.github/workflows/release-docs.yml
 
