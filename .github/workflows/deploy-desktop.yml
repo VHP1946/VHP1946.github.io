@@ -1,6 +1,11 @@
 name: Build & Release Desktop App to GH
 
-on: workflow_call
+on: 
+  workflow_call:
+    inputs:
+      APPINFO:
+        required: true
+        type: string
 
 permissions:
   contents: write
@@ -38,4 +43,4 @@ jobs:
         with:
           files: out/make/**/*.*
           body_path: 'docs/CHANGELOG.md'
-          tag_name: v1.1.1
+          tag_name: v${{ fromJson(inputs.APPINFO).version }}
