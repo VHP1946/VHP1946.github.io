@@ -3,16 +3,15 @@
 [Repo Docs](#repository-documentation) | [Resources](./pages/resources.md) | [Your Jira Dash](https://vhp.atlassian.net/jira/dashboards/10000)
 [Schemes](./vs-mongo-mart) | [Lists](./pages/settings-lists.md) | [How-To's](./pages/how-to.md)
 
-### Team Standards
-- [Logging Time](#logging-time)
-- [Code Commenting](./resources/Code Commenting.js)
-- [README Structure](#readme-structure)
-- [CHANGELOG Structure](#changelog-structure)
-- [Configurations](#configurations)
+### [Team Standards](./pages/sops.md)
+- [Logging Time](./pages/sops.md#logging-time)
+- [Documentation](./pages/sops.md#documentation)
+- [Configuration](./pages/sops.md#configuration)
 
 ---
 
 ## Repository Documentation
+
 ### Components / Packages / Libraries
 - [VHP Core - Client](./vhp-vapi-client "vhp-vapi-client")
 - [VHP Core - Server](./vhp-core-server "vhp-core-server")
