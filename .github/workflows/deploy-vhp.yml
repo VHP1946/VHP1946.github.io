@@ -1,6 +1,11 @@
 name: Package & Release vhp Module
 
-on: workflow_call
+on: 
+  workflow_call:
+    inputs:
+      APPINFO:
+        required: true
+        type: string
 
 permissions:
   contents: write
