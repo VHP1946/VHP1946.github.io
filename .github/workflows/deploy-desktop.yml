@@ -38,4 +38,4 @@ jobs:
         with:
           files: out/make/**/*.*
           body_path: 'docs/CHANGELOG.md'
-          tag_name: v1.1.0
+          tag_name: v1.1.1
