@@ -28,7 +28,7 @@ jobs:
 
   deploy-desktop:
     name: 'Build and Deploy for Desktop'
-    if: ${{ github.ref_type == 'branch' && github.ref_name == 'main*' && contains(github.repository, '/VD-') }}
+    if: ${{ github.ref_type == 'branch' && ( github.ref_name == 'main' || github.ref_name == 'main-test' ) && contains(github.repository, '/VD-') }}
     needs: get-info
     uses: ./.github/workflows/deploy-desktop.yml
     with:
@@ -36,7 +36,7 @@ jobs:
 
   deploy-webapp:
     name: 'Build and Deploy for the Web'
-    if: ${{ github.ref_type == 'branch' && github.ref_name == 'main*' && contains(github.repository, '/VA-')  }}
+    if: ${{ github.ref_type == 'branch' && ( github.ref_name == 'main' || github.ref_name == 'main-test' ) && contains(github.repository, '/VA-')  }}
     needs: get-info
     uses: ./.github/workflows/deploy-web.yml
     with:
@@ -44,7 +44,7 @@ jobs:
 
   deploy-vhp:
     name: 'Package VHP module'
-    if: ${{ github.ref_type == 'branch' && github.ref_name == 'main*' && contains(github.repository, '/vhp-')  }}
+    if: ${{ github.ref_type == 'branch' && ( github.ref_name == 'main' || github.ref_name == 'main-test' ) && contains(github.repository, '/vhp-')  }}
     needs: get-info
     uses: ./.github/workflows/deploy-vhp.yml
     with:
