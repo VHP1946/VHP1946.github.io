@@ -12,10 +12,10 @@
   - [Component Config](#component-config)
   - [Application Config](#application-config)
   - [Electron Config (Forge)](#electron-config-forge)
-- [Git Interactions]
-  - [Commit Structure]
-  - [Branch Naming]
-  - [Repo Naming]
+- [Git Interactions](#git-interactions)
+  - [Commit Structure](#commit-structure)
+  - [Branch Naming](#branch-naming)
+  - [Repo Naming](#repo-naming)
 
 ---
 
@@ -104,4 +104,4 @@ Example:
 ### Branch Naming
 
 ### Repo Naming
-*see [Component Config](#component-config) above*
+**see [Component Config](#component-config) above*
