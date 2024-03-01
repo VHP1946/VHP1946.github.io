@@ -35,6 +35,10 @@ jobs:
           node-version: 20
 
       - run: npm ci
+      
+      - name: Add WiX toolkit to PATH
+        shell: bash
+        run: echo "${WIX}bin" >> $GITHUB_PATH
 
       - run: npm run make
       
