@@ -34,16 +34,25 @@ jobs:
         with:
           node-version: 20
 
-      - run: npm ci
+      - run: |
+          npm ci
+          npm install electron-packager --save-dev
+          npm install @electron-forge/maker-zip --save-dev
       
       - name: Add WiX toolkit to PATH
         if: ${{ matrix.os.name == 'windows'}}
         shell: bash
-        run: echo "${WIX}bin" >> $GITHUB_PATH
+        run: |
+          echo "${WIX}bin" >> $GITHUB_PATH
+          npm install electron-wix-msi --save-dev
+          npm install @electron-forge/maker-wix --save-dev
 
       - name: Add appdmg dependency
         if: ${{ matrix.os.name == 'darwin'}}
-        run: npm install appdmg --save-dev
+        run: |
+          npm install appdmg --save-dev
+          npm install @electron-forge/maker-dmg --save-dev
+
 
       - run: npm run make
       
