@@ -40,7 +40,6 @@ jobs:
           npm install @electron-forge/cli --save-dev
           npm install @electron-forge/maker-zip --save-dev
           npm install @electron-forge/maker-wix --save-dev
-          npm install @electron-forge/maker-dmg --save-dev
           npm install @electron-forge/maker-deb --save-dev
           npm install @electron-forge/plugin-auto-unpack-natives --save-dev
           npm install @electron-forge/plugin-fuses --save-dev
@@ -51,12 +50,6 @@ jobs:
         run: |
           echo "${WIX}bin" >> $GITHUB_PATH
           npm install electron-wix-msi --save-dev
-
-      - name: Add appdmg dependency
-        if: ${{ matrix.os.name == 'darwin'}}
-        run: |
-          npm install electron-installer-dmg --save-dev
-          npm install appdmg --save-dev
 
       - run: npm run make
       
