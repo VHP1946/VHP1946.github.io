@@ -12,6 +12,10 @@
   - [Component Config](#component-config)
   - [Application Config](#application-config)
   - [Electron Config (Forge)](#electron-config-forge)
+- [Git Interactions]
+  - [Commit Structure]
+  - [Branch Naming]
+  - [Repo Naming]
 
 ---
 
@@ -36,7 +40,7 @@
 
 ### Component Config
 Component configuration should be in a *package.json* file
-- name -> The abbreviated name of the product / the “Programmatic Name”
+- **name** -> The abbreviated name of the product / the “Programmatic Name”
   - Mirrors the GitHub Repo name
   - "VD-" denotes a desktop application
   - "VA-" denotes a web-based application
@@ -44,28 +48,27 @@ Component configuration should be in a *package.json* file
   - "vs-" denotes a server setup
   - "vn-" denotes a network setup
   - Update File : {**name**}-{version}-full.nupkg
-- version -> The version number (set by developer via [Semantic Versioning]())
+- **version** -> The version number (set by developer via [Semantic Versioning](https://semver.org/))
   - Update File : {name}-{**version**}-full.nupkg
   - Installer Executable : {productName}-{**version**} Setup.exe
-- productName -> The long-form product name / the “Display Name”
+- **productName** -> The long-form product name / the “Display Name”
   - Installer Executable : {**productName**}-{version} Setup.exe
-- description -> A short description of the product
-- author -> The primary developer on the product
+- **description** -> A short description of the product
+- **author** -> The primary developer on the product
 
 Example:
 ```json
 {
-    "name": "VD-Office",
-    "version": "1.1.0",
-    "productName": "VHP Office Desktop",
-    "description": "Electron Portal for Office Use",
-    "author": "VHP-IM"
+  "name": "VD-Office",
+  "version": "1.1.0",
+  "productName": "VHP Office Desktop",
+  "description": "Electron Portal for Office Use",
+  "author": "VHP-IM"
 }
 ```
 
-
 ### Application Config
-Application configuration should be in a folder named "app" at the root of the product. There should be at least two versions of the file: *config-live.json* and *config-dev*.json. These are to be easily switched between within the initial setup code, typically *app.js*
+Application configuration should be in a folder named *app* at the root of the product. There should be at least two versions of the file: *config-live.json* and *config-dev*.json. These are to be easily switched between within the initial setup code, typically *app.js*
 
 Example:
 ```json
@@ -76,17 +79,29 @@ Example:
 ```
 
 ### Electron Config (Forge)
-*forge.config.js*
+Within *package.json*
 
 Example:
-```js
-module.exports = {
-    packagerConfig: {
-    icon: './bin/assets/V-Mark-red.ico',
-    executableName: 'Res-Office',
-    asar: true,
-    overwrite: true
-  },
-  // ... 
+```json
+{
+  "config": {
+    "forge": {
+      "packagerConfig": {
+        "icon": "./bin/assets/V-Mark-red.ico",
+        "executableName": "Res-Office",
+        "asar": true,
+        "overwrite": true
+      }
+    }
+  }
 }
 ```
+
+## Git Interactions
+
+### Commit Structure
+
+### Branch Naming
+
+### Repo Naming
+*see [Component Config](#component-config) above*
