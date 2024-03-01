@@ -55,4 +55,3 @@ jobs:
     if: ${{ github.ref_type == 'branch' && github.ref_name == 'dev' }}
     needs: get-info
     uses: ./.github/workflows/release-docs.yml
-

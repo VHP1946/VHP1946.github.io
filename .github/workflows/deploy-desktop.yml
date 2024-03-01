@@ -37,8 +37,13 @@ jobs:
       - run: npm ci
       
       - name: Add WiX toolkit to PATH
+        if: ${{ matrix.os.name == 'windows'}}
         shell: bash
         run: echo "${WIX}bin" >> $GITHUB_PATH
+
+      - name: Add appdmg dependency
+        if: ${{ matrix.os.name == 'darwin'}}
+        run: npm install appdmg
 
       - run: npm run make
       
