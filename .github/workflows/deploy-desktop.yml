@@ -56,6 +56,7 @@ jobs:
         if: ${{ matrix.os.name == 'darwin'}}
         run: |
           npm install electron-installer-dmg --save-dev
+          npm install appdmg --save-dev
 
       - run: npm run make
       
