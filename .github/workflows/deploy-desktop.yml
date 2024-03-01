@@ -37,7 +37,13 @@ jobs:
       - run: |
           npm ci
           npm install electron-packager --save-dev
+          npm install @electron-forge/cli --save-dev
           npm install @electron-forge/maker-zip --save-dev
+          npm install @electron-forge/maker-wix --save-dev
+          npm install @electron-forge/maker-dmg --save-dev
+          npm install @electron-forge/maker-deb --save-dev
+          npm install @electron-forge/plugin-auto-unpack-natives --save-dev
+          npm install @electron-forge/plugin-fuses --save-dev
       
       - name: Add WiX toolkit to PATH
         if: ${{ matrix.os.name == 'windows'}}
@@ -45,16 +51,13 @@ jobs:
         run: |
           echo "${WIX}bin" >> $GITHUB_PATH
           npm install electron-wix-msi --save-dev
-          npm install @electron-forge/maker-wix --save-dev
 
       - name: Add appdmg dependency
         if: ${{ matrix.os.name == 'darwin'}}
         run: |
           npm install appdmg --save-dev
-          npm install @electron-forge/maker-dmg --save-dev
 
-
-      - run: npm run make
+      - run: npm run electron-forge make
       
       - name: Release
         uses: softprops/action-gh-release@v1
