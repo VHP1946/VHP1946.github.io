@@ -43,7 +43,7 @@ jobs:
 
       - name: Add appdmg dependency
         if: ${{ matrix.os.name == 'darwin'}}
-        run: npm install appdmg
+        run: npm install appdmg --save-dev
 
       - run: npm run make
       
