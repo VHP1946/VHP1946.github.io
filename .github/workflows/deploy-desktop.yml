@@ -26,39 +26,11 @@ jobs:
           ]
     runs-on: ${{ matrix.os.image }}
     steps:
+      - name: Before Checkout Print
+        run: echo ${{ github.action_path }}
+
       - name: Checkout repo
         uses: actions/checkout@v4
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
-
-      - run: |
-          npm ci
-          npm install electron-packager --save-dev
-          npm install @electron-forge/cli --save-dev
-          npm install @electron-forge/maker-zip --save-dev
-          npm install @electron-forge/maker-wix --save-dev
-          npm install @electron-forge/maker-deb --save-dev
-          npm install @electron-forge/plugin-auto-unpack-natives --save-dev
-          npm install @electron-forge/plugin-fuses --save-dev
-      
-      - name: Add WiX toolkit to PATH
-        if: ${{ matrix.os.name == 'windows'}}
-        shell: bash
-        run: |
-          npm install electron-wix-msi --save-dev
-          echo "${WIX}bin" >> $GITHUB_PATH
-          cd ..
-          echo ${{ github.action_path }}/forge.config.js
-          cp ${{ github.action_path }}/forge.config.js ./
-
-      #- run: npm run make
-      
-      - name: Release
-        uses: softprops/action-gh-release@v1
-        with:
-          files: out/make/**/*.*
-          body_path: 'docs/CHANGELOG.md'
-          tag_name: v${{ fromJson(inputs.APPINFO).version }}
+      - name: After Checkout Print
+        run: echo ${{ github.action_path }}
