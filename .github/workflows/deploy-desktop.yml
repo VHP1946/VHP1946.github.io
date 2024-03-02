@@ -42,7 +42,10 @@ jobs:
             .github/workflows/forge.config.js
           sparse-checkout-cone-mode: false
 
-      - run: cd main
+      - run: |
+          echo ${{ github.workspace }}
+          cd ./main
+          echo ${{ github.workspace }}
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
