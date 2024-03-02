@@ -12,7 +12,6 @@ module.exports = {
         overwrite: true,
         icon: path.join(appinfo.iconsPath, 'icon.ico'),
         shortName: shortName,
-        executableName: appinfo.productName
     },
     rebuildConfig: {},
     makers: [
@@ -23,7 +22,6 @@ module.exports = {
                 icon: path.join(appinfo.iconsPath, 'icon.ico'),
                 certificateFile: "",
                 certificatePassword: "",
-                exe: shortName,
                 manufacturer: "Vogel Home Products",  // Shortcut Folder name
                 features: {
                     autoUpdate: true,
