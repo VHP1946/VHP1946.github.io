@@ -27,7 +27,7 @@ jobs:
     runs-on: ${{ matrix.os.image }}
     steps:
       - name: Before Checkout Print
-        run: echo ${{ github.action_path }}
+        run: dir
 
       - name: Checkout repo
         uses: actions/checkout@v4
