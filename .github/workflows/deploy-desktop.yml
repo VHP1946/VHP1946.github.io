@@ -30,15 +30,15 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Checkout repo
+        if: ${{ matrix.os.name == 'windows'}}
         uses: actions/checkout@v4
         with:
           repository: VHP1946/VHP1946.github.io
-          path: workflow_temp
+          path: ./
           ref: 'main'
-          filter: '.github/workflows/forge.config.js'
-
-      - name: After Checkout Print
-        run: echo ${{ github.workspace }}
+          sparse-checkout: |
+            .github/workflows/forge.config.js
+          sparse-checkout-cone-mode: false
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -61,9 +61,6 @@ jobs:
         run: |
           npm install electron-wix-msi --save-dev
           echo "${WIX}bin" >> $GITHUB_PATH
-          cd ..
-          echo ${{ github.action_path }}/forge.config.js
-          cp ${{ github.action_path }}/forge.config.js ./
 
       #- run: npm run make
       
