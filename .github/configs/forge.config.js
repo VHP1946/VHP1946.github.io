@@ -4,7 +4,7 @@ const { FuseV1Options, FuseVersion } = require('@electron/fuses');
 
 const appinfo = require('./package.json');
 
-let shortName = (appinfo.productName.replace(' ','-')) || appinfo.name;
+let shortName = appinfo.productName.replace(/\W/g,'-');
 
 module.exports = {
     packagerConfig: {
@@ -20,6 +20,7 @@ module.exports = {
                 icon: path.join(appinfo.iconsPath, 'icon.ico'),
                 certificateFile: "",
                 certificatePassword: "",
+                exe: shortName,
                 manufacturer: "Vogel Home Products",
                 shortcutFolderName: "VHP Apps",
                 features: {
@@ -31,7 +32,9 @@ module.exports = {
         {
             name: '@electron-forge/maker-zip',
             platforms: ['darwin', 'linux', 'win32'],
-            config: {}
+            config: {
+                exe: shortName
+            }
         }
     ],
     plugins: [
