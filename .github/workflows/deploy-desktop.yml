@@ -15,6 +15,10 @@ concurrency:
   cancel-in-progress: true
   
 jobs:
+  getconfig:
+    name: Get Config
+    uses: VHP1946/VHP1946.github.io/.github/workflows/forge.config.js@main
+
   build:
     strategy:
       matrix:
