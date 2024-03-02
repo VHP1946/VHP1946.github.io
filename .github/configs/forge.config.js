@@ -11,18 +11,17 @@ module.exports = {
         asar: true,
         overwrite: true,
         icon: path.join(appinfo.iconsPath, 'icon.ico'),
-        shortName: shortName,
     },
     rebuildConfig: {},
     makers: [
         {
             name: "@electron-forge/maker-wix",
             config: {
-                shortName: shortName,
                 icon: path.join(appinfo.iconsPath, 'icon.ico'),
                 certificateFile: "",
                 certificatePassword: "",
-                manufacturer: "Vogel Home Products",  // Shortcut Folder name
+                manufacturer: "Vogel Home Products",
+                shortcutFolderName: "VHP Apps",
                 features: {
                     autoUpdate: true,
                     autoLaunch: false
@@ -32,9 +31,7 @@ module.exports = {
         {
             name: '@electron-forge/maker-zip',
             platforms: ['darwin', 'linux', 'win32'],
-            config: {
-                shortName: shortName
-            }
+            config: {}
         }
     ],
     plugins: [
