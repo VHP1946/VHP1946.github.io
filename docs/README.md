@@ -1,3 +1,5 @@
+[Tech Docs Home](https://docs.vhpportal.com/) | [CHANGELOG](./CHANGELOG.md) | [Repo Link](https://github.com/VHP1946/VD-RRQuoter) | [Jira Link](https://vhp.atlassian.net)
+
 # Technical Knowledge Base README
 
 ## Process
