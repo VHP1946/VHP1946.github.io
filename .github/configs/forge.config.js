@@ -16,6 +16,7 @@ module.exports = {
         {
             name: "@electron-forge/maker-wix",
             config: {
+                shortName: appinfo.productName.replace(' ','-') || appinfo.name,
                 icon: path.join(appinfo.iconsPath, 'icon.ico'),
                 certificateFile: "",
                 certificatePassword: "",
