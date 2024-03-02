@@ -9,7 +9,7 @@ module.exports = {
         asar: true,
         overwrite: true,
         icon: path.join(appinfo.iconsPath, 'icon.ico'),
-        executableName: appinfo.productName || appinfo.name
+        executableName: appinfo.productName.replace(' ','-') || appinfo.name
     },
     rebuildConfig: {},
     makers: [
@@ -20,9 +20,6 @@ module.exports = {
                 certificateFile: "",
                 certificatePassword: "",
                 manufacturer: "Vogel Home Products",  // Shortcut Folder name
-                ui: {
-                    chooseDirectory: true
-                },
                 features: {
                     autoUpdate: true,
                     autoLaunch: false
