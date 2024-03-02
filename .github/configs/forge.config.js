@@ -10,6 +10,7 @@ module.exports = {
     packagerConfig: {
         asar: true,
         overwrite: true,
+        name: shortName,
         icon: path.join(appinfo.iconsPath, 'icon.ico'),
         executableName: shortName
     },
