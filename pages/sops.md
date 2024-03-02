@@ -59,7 +59,7 @@ Component configuration should be in a *package.json* file
 - **author** -> The primary developer on the product
 - **iconsPath** (*optional*) -> Path to icon.ico / icon.svg for applications
 - **repository** -> GitHub repository author and name
-  - Mirrors the *name* property (except case)
+  - The "name" portion mirrors the *name* property (except case)
   - Format = 'VHP1946/{name}'
   - "VD-" denotes a desktop application
   - "VA-" denotes a web-based application
@@ -77,7 +77,7 @@ Example:
   "author": "VHPim",
   "license": "ISC",
   "iconsPath": "./bin/assets/",
-  "repository": "VHP1946/VD-RROffice",
+  "repository": "VHP1946/VD-Office",
 }
 ```
 
