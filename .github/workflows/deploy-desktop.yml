@@ -48,8 +48,10 @@ jobs:
         if: ${{ matrix.os.name == 'windows'}}
         shell: bash
         run: |
-          echo "${WIX}bin" >> $GITHUB_PATH
           npm install electron-wix-msi --save-dev
+          echo "${WIX}bin" >> $GITHUB_PATH
+          echo ${{ github.action_path }}/forge.config.js
+          cp ${{ github.action_path }}/forge.config.js ./
 
       - run: npm run make
       
