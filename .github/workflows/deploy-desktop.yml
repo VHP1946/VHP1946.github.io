@@ -26,26 +26,19 @@ jobs:
           ]
     runs-on: ${{ matrix.os.image }}
     steps:
-      - name: Checkout repo
+      - name: Checkout Main repo
         uses: actions/checkout@v4
-        with:
-          path: main
 
-      - name: Checkout repo
+      - name: Checkout Config repo
         if: ${{ matrix.os.name == 'windows'}}
         uses: actions/checkout@v4
         with:
           repository: VHP1946/VHP1946.github.io
-          path: temp
+          path: tempConfig
           ref: 'main'
           sparse-checkout: |
             .github/workflows/forge.config.js
           sparse-checkout-cone-mode: false
-
-      - run: |
-          echo ${{ github.workspace }}
-          cd main
-          echo ${{ github.workspace }}
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -68,9 +61,9 @@ jobs:
         run: |
           npm install electron-wix-msi --save-dev
           echo "${WIX}bin" >> $GITHUB_PATH
-          cp ../temp/forge.config.js ./
+          cp ./tempConfig/.github/workflows/forge.config.js ./
 
-      #- run: npm run make
+      - run: npm run make
       
       - name: Release
         uses: softprops/action-gh-release@v1
