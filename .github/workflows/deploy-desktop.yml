@@ -44,7 +44,7 @@ jobs:
 
       - run: |
           echo ${{ github.workspace }}
-          cd  ${{ github.workspace }}/main
+          cd main
           echo ${{ github.workspace }}
 
       - name: Setup Node.js
