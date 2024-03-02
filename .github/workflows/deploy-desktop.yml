@@ -35,7 +35,7 @@ jobs:
           repository: VHP1946/VHP1946.github.io
           path: workflow_temp
           ref: 'main'
-          filter: '**/forge.config.js'
+          filter: '.github/workflows/forge.config.js'
 
       - name: After Checkout Print
         run: echo ${{ github.workspace }}
