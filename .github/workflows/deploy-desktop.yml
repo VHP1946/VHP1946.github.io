@@ -27,10 +27,16 @@ jobs:
     runs-on: ${{ matrix.os.image }}
     steps:
       - name: Before Checkout Print
-        run: dir
+        run: |
+          echo ${{github.workflow}}
+          echo ${{github.workflow_ref}}
+          echo ${{github.workspace}}
 
       - name: Checkout repo
         uses: actions/checkout@v4
 
       - name: After Checkout Print
-        run: echo ${{ github.action_path }}
+        run: |
+          echo ${{github.workflow}}
+          echo ${{github.workflow_ref}}
+          echo ${{github.workspace}}
