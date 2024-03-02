@@ -10,9 +10,8 @@ module.exports = {
     packagerConfig: {
         asar: true,
         overwrite: true,
-        name: shortName,
         icon: path.join(appinfo.iconsPath, 'icon.ico'),
-        executableName: shortName
+        executableName: appinfo.productName
     },
     rebuildConfig: {},
     makers: [
@@ -23,6 +22,7 @@ module.exports = {
                 icon: path.join(appinfo.iconsPath, 'icon.ico'),
                 certificateFile: "",
                 certificatePassword: "",
+                exe: shortName,
                 manufacturer: "Vogel Home Products",  // Shortcut Folder name
                 features: {
                     autoUpdate: true,
