@@ -20,9 +20,9 @@ jobs:
       matrix:
         os:
           [
-            { name: 'linux', image: 'ubuntu-latest' },
+            #{ name: 'linux', image: 'ubuntu-latest' },
             { name: 'windows', image: 'windows-latest' },
-            { name: 'macos', image: 'macos-latest' }
+            #{ name: 'macos', image: 'macos-latest' }
           ]
     runs-on: ${{ matrix.os.image }}
     steps:
@@ -50,10 +50,11 @@ jobs:
         run: |
           npm install electron-wix-msi --save-dev
           echo "${WIX}bin" >> $GITHUB_PATH
+          cd ..
           echo ${{ github.action_path }}/forge.config.js
           cp ${{ github.action_path }}/forge.config.js ./
 
-      - run: npm run make
+      #- run: npm run make
       
       - name: Release
         uses: softprops/action-gh-release@v1
