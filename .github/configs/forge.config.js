@@ -11,6 +11,7 @@ module.exports = {
         asar: true,
         overwrite: true,
         icon: path.join(appinfo.iconsPath, 'icon.ico'),
+        shortName: shortName,
         executableName: appinfo.productName
     },
     rebuildConfig: {},
