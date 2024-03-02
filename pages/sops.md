@@ -11,7 +11,6 @@
 - [Configuration](#configuration)
   - [Component Config](#component-config)
   - [Application Config](#application-config)
-  - [Electron Config (Forge)](#electron-config-forge)
 - [Git Interactions](#git-interactions)
   - [Commit Structure](#commit-structure)
   - [Branch Naming](#branch-naming)
@@ -22,8 +21,10 @@
 ## Documentation
 
 ### Logging Time
+Use Jira.
 
 ### *docs* folder
+The *docs* folder will hold technical documentation relevent to the component. At the minimum it holds a README.md and a CHANGELOG>MD, but it can hold additional folders and Markdown documents for more complex components. 
 
 ### README Structure
 [View Code](../resources/readme-example.md) |
@@ -41,9 +42,10 @@
 ### Component Config
 Component configuration should be in a *package.json* file
 - **name** -> The abbreviated name of the product / the “Programmatic Name”
-  - Mirrors the GitHub Repo name
-  - "VD-" denotes a desktop application
-  - "VA-" denotes a web-based application
+  - Mirrors the GitHub repository name / *repository* property (except case)
+  - All lowercase
+  - "vd-" denotes a desktop application
+  - "va-" denotes a web-based application
   - "vhp-" denotes a packaged module
   - "vs-" denotes a server setup
   - "vn-" denotes a network setup
@@ -55,15 +57,27 @@ Component configuration should be in a *package.json* file
   - Installer Executable : {**productName**}-{version} Setup.exe
 - **description** -> A short description of the product
 - **author** -> The primary developer on the product
+- **iconsPath** (*optional*) -> Path to icon.ico / icon.svg for applications
+- **repository** -> GitHub repository author and name
+  - Mirrors the *name* property (except case)
+  - Format = 'VHP1946/{name}'
+  - "VD-" denotes a desktop application
+  - "VA-" denotes a web-based application
+  - "vhp-" denotes a packaged module
+  - "vs-" denotes a server setup
+  - "vn-" denotes a network setup
 
 Example:
 ```json
 {
-  "name": "VD-Office",
-  "version": "1.1.0",
-  "productName": "VHP Office Desktop",
-  "description": "Electron Portal for Office Use",
-  "author": "VHP-IM"
+  "name": "vd-office",
+  "version": "2.1.0",
+  "productName": "VHP Office",
+  "description": "VHP Office Desktop Application",
+  "author": "VHPim",
+  "license": "ISC",
+  "iconsPath": "./bin/assets/",
+  "repository": "VHP1946/VD-RROffice",
 }
 ```
 
@@ -75,25 +89,6 @@ Example:
 {
   "appname": "VD-Office",
   "dev": false
-}
-```
-
-### Electron Config (Forge)
-Within *package.json*
-
-Example:
-```json
-{
-  "config": {
-    "forge": {
-      "packagerConfig": {
-        "icon": "./bin/assets/V-Mark-red.ico",
-        "executableName": "Res-Office",
-        "asar": true,
-        "overwrite": true
-      }
-    }
-  }
 }
 ```
 

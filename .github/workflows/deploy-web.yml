@@ -18,5 +18,23 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: 'Build'
-        run: echo 'Hello'
+      - name: Checkout Main repo
+        uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - run: |
+          npm ci
+          npm run build
+    
+      - name: Release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: |
+            build/*.*
+            build/**/*.*
+          body_path: 'docs/CHANGELOG.md'
+          tag_name: v${{ fromJson(inputs.APPINFO).version }}

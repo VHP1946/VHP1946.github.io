@@ -20,9 +20,9 @@ jobs:
       matrix:
         os:
           [
-            #{ name: 'linux', image: 'ubuntu-latest' },
+            { name: 'linux', image: 'ubuntu-latest' },
             { name: 'windows', image: 'windows-latest' },
-            #{ name: 'macos', image: 'macos-latest' }
+            { name: 'macos', image: 'macos-latest' }
           ]
     runs-on: ${{ matrix.os.image }}
     steps:
@@ -37,7 +37,7 @@ jobs:
           path: tempConfig
           ref: 'main'
           sparse-checkout: |
-            .github/workflows/forge.config.js
+            .github/configs/forge.config.js
           sparse-checkout-cone-mode: false
 
       - name: Setup Node.js
@@ -61,7 +61,7 @@ jobs:
         run: |
           npm install electron-wix-msi --save-dev
           echo "${WIX}bin" >> $GITHUB_PATH
-          cp ./tempConfig/.github/workflows/forge.config.js ./
+          cp ./tempConfig/.github/configs/forge.config.js ./
 
       - run: npm run make
       
