@@ -4,19 +4,21 @@ const { FuseV1Options, FuseVersion } = require('@electron/fuses');
 
 const appinfo = require('./package.json');
 
+let shortName = (appinfo.productName.replace(' ','-')) || appinfo.name;
+
 module.exports = {
     packagerConfig: {
         asar: true,
         overwrite: true,
         icon: path.join(appinfo.iconsPath, 'icon.ico'),
-        executableName: appinfo.productName.replace(' ','-') || appinfo.name
+        executableName: shortName
     },
     rebuildConfig: {},
     makers: [
         {
             name: "@electron-forge/maker-wix",
             config: {
-                shortName: appinfo.productName.replace(' ','-') || appinfo.name,
+                shortName: shortName,
                 icon: path.join(appinfo.iconsPath, 'icon.ico'),
                 certificateFile: "",
                 certificatePassword: "",
