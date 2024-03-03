@@ -22,6 +22,7 @@ module.exports = {
                 certificateFile: "",
                 certificatePassword: "",
                 manufacturer: "Vogel Home Products",
+                applicationFileFolderName: "VHP Applications",
                 shortcutFolderName: "VHP Apps",
                 features: {
                     autoUpdate: true,
@@ -32,8 +33,7 @@ module.exports = {
         {
             name: '@electron-forge/maker-zip',
             platforms: ['darwin', 'linux', 'win32'],
-            config: {
-            }
+            config: {}
         }
     ],
     plugins: [
