@@ -22,8 +22,9 @@ module.exports = {
                 certificateFile: "",
                 certificatePassword: "",
                 manufacturer: "Vogel Home Products",
-                programFilesFolderName: "VHP Applications",
+                programFilesFolderName: "Vogel Home Products/VHP Apps",
                 shortcutFolderName: "VHP Apps",
+                exe: shortName,
                 features: {
                     autoUpdate: true
                 }
