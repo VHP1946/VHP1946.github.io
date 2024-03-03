@@ -22,11 +22,13 @@ module.exports = {
                 certificateFile: "",
                 certificatePassword: "",
                 manufacturer: "Vogel Home Products",
-                applicationFileFolderName: "VHP Applications",
+                programFilesFolderName: "VHP Applications",
                 shortcutFolderName: "VHP Apps",
                 features: {
                     autoUpdate: true,
-                    autoLaunch: false
+                    autoLaunch: {
+                        enabled: true
+                    }
                 }
             }
         },
