@@ -25,10 +25,7 @@ module.exports = {
                 programFilesFolderName: "VHP Applications",
                 shortcutFolderName: "VHP Apps",
                 features: {
-                    autoUpdate: true,
-                    autoLaunch: {
-                        enabled: true
-                    }
+                    autoUpdate: true
                 }
             }
         },
